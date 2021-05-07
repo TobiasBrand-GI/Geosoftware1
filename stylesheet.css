@@ -29,3 +29,9 @@
     background-color: #af4c4c;
     color: white;
   }
+h1,h3,h4{
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  text-align: center;
+}
