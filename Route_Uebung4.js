@@ -1,4 +1,8 @@
 'use strict'
+/**
+ * Route given in the task (saved in JS as a workaround for CORS problems)
+ * @type GeoJSON FeatureCollection
+ */
 let geoJsonFeature = {
     "type": "FeatureCollection",
     "name": "tracks",
