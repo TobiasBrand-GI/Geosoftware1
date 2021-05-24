@@ -1,5 +1,5 @@
 'use strict'
-const weatherApi="4e15e7789d8b6aeb5a704566f3b07c48";  // PLEASE ENTER YOUR VALID OPENWEATHERMAP KEY HERE
+const weatherApi="";  // PLEASE ENTER YOUR VALID OPENWEATHERMAP KEY HERE
 
 /**
  * Basemap for Leaflet Application
