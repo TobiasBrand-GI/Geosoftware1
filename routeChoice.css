@@ -1,0 +1,16 @@
+.routeChoiceDiv{
+    width: 20vh;
+    height: 20vh;
+    background-color: rgb(46,96,138);;
+    margin: 3em;
+    padding: 4px;
+    text-align: center;
+}
+.routeChoiceDiv:hover{
+    border: 2px solid black;
+
+}
+
+#routeList{
+    height: 70vh;
+}
