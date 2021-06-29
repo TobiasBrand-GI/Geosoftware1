@@ -1,13 +1,15 @@
 version: "3"
 services:
   app:
+    container_name: map_website
     build: .
-    #image: cheesedocks/aufgabe-08-cheese
+    image: tobiasbrand/mapservice_geosoft
     ports:
       - "3000:3000" # forward webserver on standard-http port
     depends_on:
       - mongodbservice
   mongodbservice:
+    container_name: mongoDB
     image: mongo # to be retrieved from dockerhub
     ports:
       - "27017:27017" # forward mongod port

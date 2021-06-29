@@ -99,7 +99,7 @@ function getDatafromDB() {
             }   
         })
         .fail(function(xhr, status, errorThrown) { //if the request fails (for some reason)
-            console.log("Request has failed :(", '/n', "Status: " + status, '/n', "Error: " + errorThrown); //we log a message on the console
+            console.log("Request has failed!", '/n', "Status: " + status, '/n', "Error: " + errorThrown); //we log a message on the console
         })
         .always(function(xhr, status) { //if the request is "closed", either successful or not 
             console.log("Request completed"); //a short message is logged
