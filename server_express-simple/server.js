@@ -1,7 +1,13 @@
 const express = require('express'); //require for express
-const app = express(); //create express app
+const MongoClient = require('mongodb').MongoClient 
+const assert = require('assert')
+const app= express() //create express app
 const port = 3000;
 
+const url = 'mongodb://mongo:27017'
+const client = new MongoClient(url)
+const dbName = 'mainDB'
+const collectionName = 'paths'
 //Parser for Request
 app.use(express.json());
 app.use(express.urlencoded());
