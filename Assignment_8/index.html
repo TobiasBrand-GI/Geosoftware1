@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!--_____METADATA______-->
+    <meta charset="utf-8"/>
+    <!--_____STYLESHEETS______-->
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <!--______JAVASCRIPT FILES TO WORK WITH GEOJSON (EXTERNAL)______-->
+    <script type="text/javascript" src="../external_javascript/geojson.min.js"></script> <!-- File creation -->
+    <script type="text/javascript" src="https://unpkg.com/@mapbox/geojsonhint@latest/geojsonhint.js"></script> <!-- File validation -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <!--______OWN JAVASCRIPT FILES______-->
+    <script async src="../Assignment_1_2/route.js"></script>
+    <script async src="../Assignment_1_2/polygon.js"></script>
+    <script async src="../Assignment_1_2/intersection.js"></script>
+    <script async src="../Assignment_1_2/partsCalc.js"></script>
+    <script async src="../Assignment_1_2/pathLength.js"></script>
+    <script async src="../Assignment_1_2/geoJSONWork.js"></script>
+    <script async src="domVisual_edited.js"></script>
+    <script async src="main_edited.js"></script>
+    <script async src="vueCommands.js"></script>
+
+    <!--______TITLE_______-->
+    <title>Task 8</title>
+</head>
+<body>
+    <h1>Routen-Check</h1>
+    <!-- MAIN DIV -->
+    <div id="mainFrame">
+    <div id="app">
+        <textarea id="routeInput" placeholder="Paste data in GeoJSON format here"></textarea><br>
+        <button v-on:click="useExample">Use example data</button>
+        <button v-on:click="clearAll">clear text</button><br>
+        <button v-on:click="startCalc">Start Calculation</button>
+        <p>{{message}}</p>
+        <p>
+    </div>
+    <div id="tableApp">
+        <table class="table table-striped" v-if="seen">
+            <thead>
+                <tr id="headerRow">
+                    <th>ID</th>
+                    <th>Startpunkt</th>
+                    <th>Endpunkt</th>
+                    <th>Abschnittslänge in Meter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(dataset,i) in dataset[0]" :key="i" id="dataRow">
+                    <td scope="row">{{ i+1 }}</td>  
+                    <td>{{ dataset[i][0] }}</td> 
+                    <td >{{ dataset[i][1]}}</td>  
+                    <td >{{ dataset[i][2]}}</td>  
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</body>
+</html>

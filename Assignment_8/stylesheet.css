@@ -1,0 +1,50 @@
+html{
+  background-image: url("../src/bg_mapIMG.jpg"); /* Source of IMage: <a href="https://www.vecteezy.com/free-vector/navigation">Navigation Vectors by Vecteezy</a>*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d81e2b;
+}
+button{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d81e2b;
+}
+#mainFrame{
+  background-color: aquamarine;
+}
+#data {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #data td, #data th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  #dataRow{
+    background-color: #ffff;
+  }
+  #data tr:nth-child(even){background-color: #9fa0a2;}
+  
+  #headerRow {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #d81e2b;
+    color: white;
+  }
+
+  #summTab{
+    border-collapse: collapse;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #d81e2b;
+    color: white;
+  }
+h1{
+  text-align: center;
+}

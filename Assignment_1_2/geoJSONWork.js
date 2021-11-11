@@ -20,7 +20,7 @@ function validationCheck(input, options){
  * @returns object
  */
 function parseIntoJSON(data){
-    lineStringData=[{line:data}]
+    let lineStringData=[{line:data}]
     // calling parsing method from geojson.min.js, author: https://github.com/caseycesari/GeoJSON.js
     return GeoJSON.parse(lineStringData, {'LineString': 'line' });
 }
